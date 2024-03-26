@@ -1,0 +1,120 @@
+.box {
+    width: max-content;
+}
+
+.low_container {
+    width: max-content;
+}
+
+.low_container form {
+    display: flex;
+    flex-direction: row;
+}
+
+.info {
+    flex: 1.5;
+}
+
+.desc {
+    flex: 0.5;
+    padding: 0 10px;
+    padding-bottom: 10px;
+}
+
+.desc textarea {
+    height: 100%;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+@media screen and (max-width: 850px) {
+    body {
+        height: 100%;
+    }
+
+    .wrapper {
+        height: 100%;
+    }
+
+    .box {
+        width: 86%;
+    }
+
+    .low_container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .low_container form {
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .desc textarea {
+        width: 90%;
+        height: 90%;
+    }
+}
+
+@media screen and (max-width: 520px) and (max-height: 750px) {
+    body {
+        height: fit-content;
+        margin-top: 100px;
+    }
+
+    .wrapper {
+        height: 100%;
+        padding-bottom: 40px;
+    }
+
+    .box {
+        width: 86%;
+    }
+
+    .low_container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        overflow-y: scroll;
+    }
+
+    .low_container form {
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .desc textarea {
+        width: 90%;
+        height: 90%;
+    }
+}
+
+.popup .popuptext {
+    top: -18%;
+    left: 88%;
+}
+
+@media screen and (max-width: 820px) {
+    .popup .popuptext {
+        visibility: hidden;
+        width: 160px;
+        text-align: center;
+        border-radius: 6px;
+        padding: 8px 0;
+        position: absolute;
+        z-index: 1;
+        top: -18%;
+        left: 53%;
+        margin-left: -80px;
+    }
+
+    /* Popup arrow */
+    .popup .popuptext::after {
+        top: 100%;
+        left: 50%;
+        z-index: 2;
+    }
+}
+

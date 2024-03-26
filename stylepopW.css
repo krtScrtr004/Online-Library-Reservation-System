@@ -1,0 +1,52 @@
+.popupWin {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: 500px;
+    height: fit-content;
+    text-align: center;
+    box-shadow: 0 1px 10px #000;
+    border-radius: 10px;
+}
+
+form input[type="email"] {
+    display: inline-block;
+    width: 200px;
+    box-sizing: border-box;
+}
+
+.blue_header {
+    height: auto;
+    width: 100%;
+    padding: 10px 0 10px 0;
+    background-color: rgb(6, 4, 129);
+    border-radius: 10px 10px 0 0;
+}
+
+.blue_header h3 {
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+}
+
+.cursor-x {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .popupWin {
+        width: 60%;
+        height: fit-content;
+    }
+
+    .popupWin form label {
+        text-align: center;
+    }
+
+    .blue_header h3 {
+        font-size: 100%;
+    }
+}

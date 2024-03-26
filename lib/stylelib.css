@@ -1,0 +1,821 @@
+header {
+    width: 100%;
+    background-color: rgb(6, 4, 129);
+    border: none;
+    border-radius: 0px 0px 5px 5px;
+    border-color: #333;
+    box-shadow: 0 1px 10px #333;
+    position: fixed;
+    top: 0;
+}
+
+#sysn {
+    font-size: 100%;
+}
+
+#log_box {
+    font-size: 100%;
+}
+
+@media screen and (max-width: 820px) {
+    #log_box {
+        font-size: 70%;
+    }
+}
+
+@media screen and (min-width: 501) and (max-width: 621) {
+    #sysn {
+        display: none;
+    }
+}
+
+h2 {
+    width: 100%;
+    margin-top: 15px;
+    float: left;
+    line-height: 50px;
+    font-size: 30px;
+    color: black;
+}
+
+body {
+    transition: background-color .5s;
+}
+
+td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.tb_btn:hover {
+    padding: 5px;
+}
+
+.exempt-hover a:hover {
+    background-color: inherit;
+    padding: 0;
+}
+
+.a-exempt {
+    border-color: inherit;
+    box-shadow: none;
+}
+
+.box {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-color: none;
+    border-radius: 10px;
+    background-color: rgb(6, 4, 129);
+    box-shadow: 5px 5px 10px #333;
+    color: white;
+}
+
+.box h2,
+.box form {
+    text-align: center;
+    color: white;
+}
+
+.box h2 {
+    width: 100%;
+    font-size: 45px;
+    margin-left: 0;
+}
+
+.box table {
+    border: none;
+    border-color: #333;
+    box-shadow: 0 0 10px #333;
+    color: rgb(13, 11, 169);
+}
+
+.box label {
+    text-align: right;
+}
+
+.low_container {
+    height: 80%;
+    width: 600px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+}
+
+.divider_form {
+    display: flex;
+    flex-direction: row;
+}
+
+.low_container input[type="file"] {
+    flex: 1;
+    height: 30px;
+    width: 250px;
+    background-color: white;
+    float: right;
+    margin-right: 92px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    color: black;
+}
+
+#addb label {
+    flex: 1;
+    float: right;
+    line-height: 35px;
+    margin-left: 1%;
+    color: black;
+}
+
+.book_div {
+    display: flex;
+    flex-direction: column;
+}
+
+.tbl_sec {
+    flex: 1;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.btn_sec {
+    flex: 1;
+    width: 100%;
+}
+
+/* Sidenav */
+.sidenav {
+    height: 100%;
+    width: 0;
+    margin-top: 60px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(205, 204, 224);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    border: none;
+    border-color: #333;
+    box-shadow: 0 0 10px #333;
+    border-radius: 0px 5px 0px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    background-color: grey;
+    border-radius: 0;
+    font-weight: bold;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media only screen and (max-height: 500px) {
+    .sidenav {
+        height: 100%;
+        overflow-y: auto;
+    }
+
+    .sidenav a {
+        font-size: 13px;
+    }
+
+    #hidebr1 {
+        display: none;
+    }
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+.sidenav_icon {
+    line-height: 55px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    color: white;
+}
+
+form label {
+    display: inline-block;
+    width: 120px;
+    text-align: right;
+    margin-right: 10px;
+    color: black;
+}
+
+form input[type="text"],
+input[type="file"] {
+    height: 5px;
+    width: 200px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+form input[type="file"] {
+    height: 30px;
+}
+
+
+input[type="submit"] {
+    background-color: rgb(2, 24, 153);
+    border-color: #333;
+    box-shadow: 0 0 10px #333;
+}
+
+/* Home Page */
+.grid_prnt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 250px;
+    background-color: transparent;
+    border: 1px solid grey;
+    box-shadow: 5px 5px 5px #000,
+        5px 5px 5px #ccc;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-right: 10px;
+    padding: 0;
+}
+
+#top_cncl {
+    margin-top: 0;
+}
+
+.grid:not(:last-child) {
+    margin-right: 10px;
+}
+
+.grid img {
+    margin-right: 10px;
+    height: 50px;
+}
+
+.stats {
+    height: 130px;
+    width: 180px;
+    border: none;
+    box-shadow: 1px 1px 5px #000;
+    color: white;
+}
+
+.stats p {
+    margin-bottom: 10px;
+}
+
+.stats h1 {
+    text-align: center;
+    font-size: 45px;
+}
+
+#hidebr {
+    display: none;
+}
+
+#hidebr1 {
+    display: block;
+}
+
+
+/* Tablet */
+@media screen and (min-width: 621px) and (max-width: 820px) {
+
+    html,
+    body,
+    header {
+        width: 100%;
+        height: calc(100% - 60px);
+    }
+
+    .grid_section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid_prnt {
+        display: flex;
+        justify-content: center;
+    }
+
+    .grid {
+        width: 28vw;
+        height: 15vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        font-size: 13px;
+    }
+
+    .grid img {
+        height: 30px;
+    }
+
+    .stats {
+        width: 25vw;
+        height: 15vh;
+        padding: 8px;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .box {
+        width: 86%;
+        height: fit-content;
+    }
+
+    .box label {
+        text-align: left;
+    }
+
+    .box h2 {
+        margin-left: 0;
+    }
+
+    .low_container {
+        width: 100%;
+        height: 100%;
+        padding-top: 8px;
+    }
+
+    .low_container form {
+        margin: 0;
+    }
+
+    .low_container form label {
+        text-align: center;
+    }
+
+    .low_container input {
+        margin: 5px;
+    }
+
+    .low_container input[type="submit"] {
+        margin-bottom: 15px;
+    }
+
+    .divider_form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .low_container input[type="file"] {
+        flex: 1;
+        float: left;
+    }
+
+    .low_container input[type="file"] {
+        width: 408px;
+        margin-right: 0;
+        border: 1px solid #ccc;
+        color: black;
+    }
+
+    table {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    #addb label {
+        flex: 1;
+        margin: 0;
+    }
+
+    #addb br {
+        display: none;
+    }
+
+    #hidebr {
+        display: block;
+    }
+}
+
+/* Mini-tab */
+@media screen and (min-width: 501px) and (max-width: 620px) {
+
+    html,
+    body,
+    header {
+        width: 100%;
+        height: calc(100% - 60px);
+    }
+
+    .grid_section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid_prnt {
+        display: flex;
+        justify-content: center;
+    }
+
+    .grid {
+        width: 28vw;
+        height: 15vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        font-size: 13px;
+    }
+
+    .grid h1 {
+        margin-left: 2%;
+    }
+
+    .grid img {
+        display: none;
+    }
+
+    .stats {
+        width: 25vw;
+        height: 15vh;
+        padding: 8px;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .stats h1 {
+        font-size: 30px;
+    }
+
+    .box {
+        width: 86%;
+        height: fit-content;
+    }
+
+    .box label {
+        text-align: left;
+    }
+
+    .box h2 {
+        margin-left: 0;
+        font-size: 30px;
+    }
+
+    .low_container {
+        width: 100%;
+        height: 100%;
+        padding-top: 8px;
+    }
+
+    .low_container form {
+        margin: 0;
+        font-size: 10px;
+    }
+
+    .low_container form label {
+        text-align: center;
+    }
+
+    .low_container input {
+        margin: 5px;
+    }
+
+    .low_container input[type="submit"] {
+        margin-bottom: 15px;
+    }
+
+    .divider_form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .low_container input[type="file"] {
+        flex: 1;
+        float: left;
+    }
+
+    .low_container input[type="file"] {
+        width: 408px;
+        margin: 0 auto;
+        border: 1px solid #ccc;
+        color: black;
+    }
+
+    table {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .scroll {
+        height: 100vh;
+    }
+
+    #book_btn {
+        margin-bottom: 20px;
+    }
+
+    #addb label {
+        flex: 1;
+        float: left;
+        margin-right: 0;
+    }
+
+    #addb br {
+        display: none;
+    }
+
+    #hidebr {
+        display: block;
+    }
+}
+
+/* Smartphone */
+@media screen and (min-width: 360px) and (max-width: 500px) {
+
+    html,
+    body,
+    header {
+        width: 100%;
+        height: calc(100% - 60px);
+    }
+
+    h2 {
+        font-size: 15px;
+    }
+
+    .grid_section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid_prnt {
+        display: flex;
+        justify-content: center;
+    }
+
+    .grid {
+        width: 28vw;
+        height: 15vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        font-size: 13px;
+    }
+
+    .grid h1 {
+        margin-left: 2%;
+    }
+
+    .grid img {
+        display: none;
+    }
+
+    .stats {
+        width: 25vw;
+        height: 15vh;
+        padding: 8px;
+        text-align: center;
+        font-size: 13px;
+    }
+
+    .stats h1 {
+        font-size: 300%;
+    }
+
+    .box {
+        width: 86%;
+        height: fit-content;
+    }
+
+    .box label {
+        text-align: left;
+    }
+
+    .box h2 {
+        margin-left: 0;
+        font-size: 25px;
+    }
+
+    .low_container {
+        width: 100%;
+        height: 100%;
+        padding-top: 8px;
+    }
+
+    .low_container form {
+        margin: 0;
+        font-size: 10px;
+    }
+
+    .low_container form label {
+        text-align: center;
+    }
+
+    .low_container input {
+        margin: 5px;
+    }
+
+    .low_container input[type="submit"] {
+        margin-bottom: 15px;
+    }
+
+    .divider_form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .low_container input[type="file"] {
+        flex: 1;
+        float: left;
+    }
+
+    .low_container input[type="file"] {
+        width: 170px;
+        margin: 0 auto;
+        padding: 0;
+        border: 1px solid #ccc;
+        color: black;
+    }
+
+    table {
+        width: 100%;
+        max-height: 90px;
+        font-size: 12px;
+    }
+
+    .scroll {
+        max-height: 80vh;
+    }
+
+    #addb label {
+        flex: 1;
+        float: left;
+        margin-right: 0;
+    }
+
+    #addb br {
+        display: none;
+    }
+
+    #hidebr {
+        display: block;
+    }
+}
+
+/* Very small screen */
+@media screen and (min-width: 291px) and (max-width: 359px) {
+
+    html,
+    body,
+    header {
+        width: 100%;
+        height: calc(100% - 60px);
+    }
+
+    .grid_section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid_prnt {
+        display: flex;
+        justify-content: center;
+    }
+
+    .grid {
+        width: 28vw;
+        height: 15vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        margin-right: 5px;
+        font-size: 10px;
+    }
+
+    .grid h1 {
+        margin-left: 2%;
+    }
+
+    .grid img {
+        display: none;
+    }
+
+    .stats {
+        width: 25vw;
+        height: 10vh;
+        margin-right: 1px;
+        padding: 8px;
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .stats h1 {
+        font-size: 300%;
+    }
+
+    .box {
+        width: 86%;
+        height: fit-content;
+    }
+
+    .box label {
+        text-align: left;
+    }
+
+    .box h2 {
+        margin-left: 0;
+        font-size: 20px;
+    }
+
+    .low_container {
+        width: 100%;
+        height: 100%;
+        padding-top: 8px;
+    }
+
+    .low_container form {
+        margin: 0;
+        font-size: 10px;
+    }
+
+    .low_container form label {
+        text-align: center;
+    }
+
+    .low_container input {
+        margin: 5px;
+    }
+
+    .low_container input[type="submit"] {
+        margin-bottom: 15px;
+    }
+
+    .divider_form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .low_container input[type="file"] {
+        flex: 1;
+        float: left;
+    }
+
+    .low_container input[type="file"] {
+        width: 170px;
+        margin: 0 auto;
+        padding: 0;
+        border: 1px solid #ccc;
+        color: black;
+    }
+
+    table {
+        width: 100%;
+        max-height: 90px;
+        font-size: 12px;
+    }
+
+    .scroll {
+        max-height: 80vh;
+    }
+
+    #addb label {
+        flex: 1;
+        float: left;
+        margin-right: 0;
+    }
+
+    #addb br {
+        display: none;
+    }
+
+    #hidebr {
+        display: block;
+    }
+}
